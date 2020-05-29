@@ -1,0 +1,273 @@
+ //Small Mobile Phone
+
+ @include mediaXm{
+    main{
+        align-items: center;
+        text-align: center;
+
+       h1.lg-heading {
+           color: #fff;
+           font-size: 1.5rem;
+           text-transform: uppercase;
+       }
+       h2.sm-heading{
+           font-size: 1rem; 
+       }
+       span#element{
+           font-size: 0.8rem; 
+       }
+       .icons{
+           font-size: 0.8rem; 
+       }
+       .cv{
+        margin-top: 1.5rem;
+        a{
+          padding: 10px 15px;
+          font-size: 0.8rem; 
+        }
+      }
+    }
+
+    ul.menu-nav,
+    div.menu-branding{
+        float: none;
+        width: 100%;
+        min-height: 0;
+
+        &.show{
+            transform: translate3d(0,0,0);
+        }
+    }
+    .menu .nav-link{
+        font-size: 16px;
+    }
+    .menu-nav{
+        height: 70vh;
+        transform: translate3d(-100%,0,0);
+    }
+    .menu-branding{
+       height: 30vh;
+       transform: translate3d(100%,0,0);
+
+       .portrait{
+           background: url(../img/imran-sm.jpg);
+           width: 150px;
+           height: 150px;
+       }
+    }
+
+    .about-info{
+        grid-template-areas: 
+         'bioimage'
+         'bio'
+         'job1'
+         'job2'
+         'job3'
+         'job4'
+         'job5'
+         'job6';
+
+        grid-template-columns: 1fr;
+
+    }
+    main h1.lg-heading{
+        margin-bottom: 20px;;
+    }
+
+    .about-info .bio{
+        font-size: 1rem;
+    }
+    .about-info{
+        text-align: left;;
+    }
+    .projects{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .contact-info{
+        grid-template-columns: 1fr;
+    }
+    .contact-txt{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .contact-login a{
+        padding: 10px 25px;
+        color: $primary-color;
+        background-color: $secondary-color;
+        margin-bottom: 10px;
+        float: left;
+      }
+}
+ 
+ 
+ 
+ //Tablates and Small Laptop
+ @include mediaSm{
+     main{
+         align-items: center;
+         text-align: center;
+
+        h1.lg-heading {
+            color: #fff;
+            font-size: 2rem;
+            text-transform: uppercase;
+        }
+        h2.sm-heading{
+            font-size: 1.5rem; 
+        }
+        span#element{
+            font-size: 1rem; 
+        }
+        .icons{
+            font-size: 1rem; 
+        }
+        .cv{
+            margin-top: 1.5rem;
+            a{
+              padding: 10px 15px;
+              font-size: 0.8rem; 
+            }
+          }
+     }
+
+     ul.menu-nav,
+     div.menu-branding{
+         float: none;
+         width: 100%;
+         min-height: 0;
+
+         &.show{
+             transform: translate3d(0,0,0);
+         }
+     }
+     .menu .nav-link{
+        font-size: 20px;
+    }
+
+     .menu-nav{
+         height: 70vh;
+         transform: translate3d(-100%,0,0);
+         font-size: 20px;
+
+     }
+     .menu-branding{
+        height: 30vh;
+        transform: translate3d(100%,0,0);
+
+        .portrait{
+            background: url(../img/imran-sm.jpg);
+            width: 150px;
+            height: 150px;
+        }
+     }
+
+     .about-info{
+         grid-template-areas: 
+         'bioimage'
+         'bio'
+         'job1'
+         'job2'
+         'job3'
+         'job4'
+         'job5'
+         'job6';
+
+         grid-template-columns: 1fr;
+
+     }
+     main h1.lg-heading{
+         margin-bottom: 20px;;
+     }
+
+     .about-info .bio{
+         font-size: 1rem;
+     }
+     .about-info{
+         text-align: left;;
+     }
+     .projects{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .contact-info{
+        grid-template-columns: 1fr;
+    }
+    .contact-login a{
+        padding: 10px 25px;
+        color: $primary-color;
+        background-color: $secondary-color;
+        margin-bottom: 10px;
+        float: left;
+      }
+}
+
+//Medium Device
+
+@include mediaMd{
+    main{
+        align-items: center;
+        text-align: center;
+
+       h1.lg-heading {
+           color: #fff;
+           font-size: 3.5rem;
+           text-transform: uppercase;
+       }
+       h2.sm-heading{
+           font-size: 1.5rem; 
+       }
+       span#element{
+           font-size: 1rem; 
+       }
+       .icons{
+           font-size: 1rem; 
+       }
+    }
+    .menu .nav-link{
+        font-size: 25px;
+    }
+
+    .about-info{
+        grid-template-areas: 
+        'bioimage'
+        'bio'
+        'job1'
+        'job2'
+        'job3'
+        'job4'
+        'job5'
+        'job6';
+
+        grid-template-columns: 1fr;
+
+    }
+    main h1.lg-heading{
+        margin-bottom: 20px;;
+    }
+
+    .about-info .bio{
+        font-size: 1rem;
+    }
+    .about-info{
+        text-align: left;;
+    }
+
+    .projects{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .contact-info{
+        grid-template-columns: 1fr;
+    }
+    .contact-login a{
+        padding: 10px 25px;
+        color: $primary-color;
+        background-color: $secondary-color;
+        margin-bottom: 10px;
+        float: left;
+      }
+}
+
+// Large Device
+// @include medialg{
+//     .projects{
+//         grid-template-columns: repeat(4, 1fr);
+//     }
+// }
